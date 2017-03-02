@@ -50,10 +50,11 @@ def StateMinimize(states, nextStates):
         nextGrouping = CalcNextGrouping(states, nextStates)
         nextGroupDict = ConstructGroupDict(nextGrouping)
 
-        PrintGrouping(nextGroupDict)
-
         if IsFinished(nextGroupDict, groupDict):
             return
+
+        PrintGrouping(nextGroupDict)
+
         states = nextGrouping
         groupDict = nextGroupDict
 
