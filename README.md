@@ -8,7 +8,7 @@ for a given finite state machine.
 The algorithm behind it is a greedy algorithm that begins by grouping each
 state into the minimum possible grouping, and then it continually splits
 each of these groups up until no more splits can be performed without
-introducing redundant states.
+introducing redundancies.
 
 ## Operation
 
